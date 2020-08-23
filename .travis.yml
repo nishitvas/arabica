@@ -1,3 +1,12 @@
 language: node_js
 node_js:
-  - 14
+- 14
+deploy:
+  provider: s3
+  access_key_id: AKIA5UUUZLWECJRUWBM4
+  secret_access_key:
+    secure: c3gl5jes2WDrLOBvRVTGqCie0hcnVgNSs3fqGKBZD4+HhU/StJqrTGQp/a6zjWphuF2ABtIrtmeUK2MxNVEAPcnIngAexkDt8ghQaYO37P31do7o3V0dmpwLbE0XlzTj4MlyGv5iYWxREOu2JqQg/pR5nvEPq2psLBZm5TQAqFMW+R8lJbUGe/sD0qnLPNRiTfKGY99AiMf8xYyogeu88H+GeM/MmUyIDI2ASkFmKlTHNsSUZvQjcthPsQ/se4XehpPMpPmMluL4qhcYAhhXDcnQ8ntT8qelInbA1hVJimDfaz1KK5Q9oiricqKFjkX0yW1LkJOHyDenDwIpK4OIswKf2X+EI5Gr8Itf5QDyMqBRZ1VOoofviuH/csu+bZeS2zjtANSh0d2RnS25f/ceUBgVtgvHX2ZhcoAbEynVN0H6sctyW3NxmyYrRWXiKOXU/rBx0cpfhlXieAQbkMI6AP7/ZQmxnDc18lGPkEt3zZKgCntlai6T+0bW7i3vsEASg9riBcByFGRFleYnJnSSK1ta5ztziJ78nUkGqdWvgX5G3v16fBHQyMrXRJWaM542Ctm93VH2r3L1LLrLNHmlKFL6tmL8fS2F7lZkWS0a1LVgwjntT9ww9KZGJkolFw6GyB1hYnEqZHVgfBLOWQ87yhw0umzfjWR3yl/MOuUtpig=
+  bucket: arabica-website-kvpfipxymx
+  skip_cleanup: true
+  local_dir: dist
+  region: ap-south-1
