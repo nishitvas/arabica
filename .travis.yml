@@ -1,4 +1,6 @@
 language: node_js
+os: linux
+dist: xenial
 node_js:
 - stable
 cache:
@@ -8,8 +10,8 @@ script:
   - npm run build
 deploy:
   provider: s3
-  bucket: arabica-website-kvpfipxymx
-  skip_cleanup: true
+  bucket: nishitvas.dev
+  cleanup: false
   local_dir: dist
   region: ap-south-1
   on:
