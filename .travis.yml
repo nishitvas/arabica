@@ -10,8 +10,7 @@ script:
   - npm run build
 deploy:
   provider: s3
-  bucket: nishitvas.dev
-  skip_cleanup: true
+  bucket: arabica-website-kvpfipxymx
   local_dir: dist
   region: ap-south-1
   on:
