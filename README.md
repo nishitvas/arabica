@@ -1,5 +1,7 @@
 # arabica
 
+[![Build Status](https://travis-ci.com/nishitvas/arabica.svg?branch=master)](https://travis-ci.com/nishitvas/arabica)
+
 ## Project setup
 ```
 npm install
